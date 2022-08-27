@@ -1,0 +1,92 @@
+<!doctype html public "-//IETF//DTD HTML//EN" target="_blank">
+<html>
+<head>
+    <title>Definition</title>
+    <meta charset="utf-8"/>
+    <link rel=stylesheet href="css/swan.css" type="text/css">
+    </head>
+
+<body>
+<h2>Definition and its Rationale</h2>
+
+Everyone knows what a polyhedron is, right?  The problem is that there is not a universally shared definition and accepted definitions have changed greatly over time.  From the convex solids of the ancient Greeks, through the star-shaped faces and faceless edge-frameworks of Renaissance artists, past the infamous Coxeter/DuVal enumeration of (solid) icosahedral "stellations", there has been unrecognized confusion as to whether polyhedra are solids, surfaces, or something else.  Coxeter <i>et al</i>'s summary of uniform polyhedra treated them as surfaces; it accepted equatorial faces and non-orientable objects.  Of all the definitions, this one is the best analogy to 2-dimensional polygons.  The implied definition here is clear, but it is not easy to come up with a sequence of words that is adequate.  It seems intuitive to define a polyhedron as an aggregation of polygons (planar, of course) that share edges, but even "polygon" is ambiguous - is it a 2-dimensional region or only the 1-dimensional chain of vertices and edges?
+
+<p>
+Recent authors have continued to push the boundaries.  Branko Grünbaum and others have put forth what can best be called "polypolygons" or "edge-skeletons", with arbitrary, possibly skew, polygons as "faces" and for which one would be hard pressed to define the shape of the surface.  Some writers today refer to polyhedra as mere "realizations" of abstract forms, as if polyhedra are defined by their combinatorial properties as opposed to the geometric and symmetry constraints that are usually the primary motive for studying them.  Often writers ignore the surface topology of the faces altogether or group together regions having disconnected interiors.  Such generality creates its own issues.
+<p>
+Grünbaum and <a href="https://www.steelpillow.com/polyhedra">Guy Inchbald</a> have written extensively about this issue, but it does not appear that any consensus will form soon.  As a result, it has become necessary for anyone writing on the topic to get a bit pedantic about their definition.
+ <p>
+In the document describing the detailed enumeration, I am very brief in providing a definition.  This is because I don't want to bog the reader down in minutia before even getting started, and the paper is quite long as it is.  So here are some details on the rationale for the definition that I follow, which I think is intuitively obvious.
+
+
+<h3>Overall form</h3>
+<i>A polyhedron is a 3-dimensional analog of a polygon, a 2-dimensional figure.</i>  In considering what a polyhedron is, we should consider what is accepted as a polygon and make the appropriate analogies.  Of course, it is also necessary to accept that a <i>polygon</i> is a closed chain of vertices and edges, without any 2-dimensional regions that may be enclosed in the plane by portions of the edges.  A good example is the hexagon of <a href="https://en.wikipedia.org/wiki/Pappus's_hexagon_theorem">Pappus's Hexagon Theorem</a>.  No one, I believe, makes the mistake of thinking that the various planar regions separated by its sides are part of the hexagon.
+<p>
+<i>A polyhedron is a surface, not a solid.</i>  This is the most important consideration, and one on which many writers are not consistent.  It doesn't help that the phrase "Platonic solids" has been around for so long.  A surface may break up the space in which it lies into multiple regions.  These are <em>not</em> part of the polyhedron.  This is especially important for non-orientable polyhedra since, like the Klein Bottle, they have no interior and no exterior.  You can <a href="https://www.kleinbottle.com">buy a glass model</a> of a Klein Bottle, pour colored water into the narrow opening, and watch it collect in the bulbous portion.  But if this were a real Klein Bottle, the liquid would continue to flow along the "outer" side of the narrow tube right back "out" and into your lap.
+<p>
+There is a natural tendency to think otherwise because we are 3-dimensional beings.  When we see a polyhedron model (almost always with opaque faces) we cannot readily see the internal structure.  We're like A Square in Flatland encountering a star polygon.  We apply our experience with everyday physical objects and tend to include all those inaccessible regions as part of the object.  But just as the hexagon of the Pappus Hexagon Theorem cuts up the plane into several finite regions without anyone considering those regions to be part of the hexagon, a polyhedron will isolate regions of space that should not be treated as part of it.  Four-dimensional beings would see this immediately.
+<p>
+Most of the criteria below follow from these two main points.
+
+
+<h3>Polyhedra are:</h3>
+<ul>
+<li>finite:  This rules out tessellations, honeycombs, infinitely long prism-shaped objects, and perhaps some other oddities.  Those are interesting to study, but are in quite different categories.  A polyhedron has a single center of symmetry and no translations in its symmetry group.
+<p>
+<li>connected:  I cannot accept Coxeter and DuVal's infamous <b>f2</b>, which is a constellation of polyhedra and not even a valid stellation, as its faces are not <i>extensions of</i> and do not include the original faces.  Free compounds, such as that of five tetrahedra, are disconnected clusters of separate polyhedra located at the same place in space.
+<p>
+<li>closed:  The surface has no boundaries.
+</ul>
+
+
+<h3>Vertices are:</h3>
+<ul>
+<li>distinct:  Allowing coincident vertices creates chaos.  Branko Grünbaum argued for them because they allow continuous transformations of polypolygons.  However he did not appear to consider the effect on the surfaces bounded by those polygons.  Even without transformations, perhaps the best argument against coincident vertices may be found in one of Grünbaum's own articles.  In <i><a href="https://www.sciencedirect.com/science/article/pii/S0012365X06005279">Graphs of polyhedra; polyhedra as graphs</a></i>, he displayed what looks like a familiar, tame cube.  Unwrapping it, however, reveals that each face is a dodecagon of density three, the border of which visits each of its vertices and edges three times each.  It could be worse: each face could separately be a dodecagon, a square and an octagon, three squares, or even two hexagons, as Grünbaum accepted polygons that retrace themselves back and forth.  Faces that meet at what appears to be a single edge can be attached across their three shared edges in an arbitrary manner, leading to a large number of possible surfaces.  And that's only density 3.  Consider that the overall surface could have density 5, 50, or any number, and one sees that even a cube explodes into an infinite collection of monsters of unbounded complexity.  This is no way to run a well-defined mathematical zoo.
+<p>
+<li>of valence 3 or more:  2-valent vertices result either in collinear adjacent edges or coplanar (even coincident) adjacent faces.  Neither allows sufficient three-dimensionality.
+</ul>
+
+
+<h3>Edges are:</h3>
+<ul>
+<li>incident with exactly 2 faces each:  Some writers want to allow 3 or more faces to meet at an edge, resulting in most any spatial configuration being called a "polyhedron"  I do not, for the same reason that a square along with one of its diagonals is not considered a polygon.
+<p>
+<li>incident with exactly 2 vertices each:  This follows from the vertices being the ends of the segment that constitutes an edge.  Edges do not continue on past them to meet other vertices.  (A vertex could happen to lie on the interior of an edge, but it is not incident with that edge.)
+</ul>
+
+
+<h3>Faces ("Hedra") are:</h3>
+<ul>
+<li>not polygons!  They are <i>surfaces that have polygonal boundaries</i>.  It is not possible to overemphasize this.
+<p>
+<li>planar:  This is for the same reason that edges are linear.  The general idea of a polytope is of an n-dimensional object decomposable into (n-1)-dimensional components, each of which is in an (n-1)-dimensional subspace.  This rules out skew faces, for which there is no good way to define the surface coherently.  It also rules out exotic topology such as cross-cap faces.
+<p>
+<li>path-connected:  When a face's polygonal boundary crosses itself without intersecting (as does a pentagram), it is sometimes tempting to "fill" the polygon in such a way that the resulting face has one or more pinched twists.  In addition to creating ambiguity as to whether such a twist is right-handed or left-handed, this results in a situation in which the bounded surface switches abruptly, discontinuously, from one side of an edge to the other.  This is shown below on the left as an improper edge crossing.  (The hatch marks indicate the surface meeting the edge.)  It also can result in separate regions of the face whose interiors are disconnected.  In addition, if one assigns a normal vector, it also switches abruptly from one side to the other.  In order for the face to be a valid surface, 1) every pair of points in the interior of the face must be connected by a path that has an open neighborhood in the surface and 2) the surface must be on the same side of an edge for the edge's entire length.  This results in proper crossings as shown below on the right.  If one assigns a consistent direction to each edge and traverses the boundary in that direction, the surface would always be on the left or the right as one progresses.
+<table>
+<tr><td class="i"><center><img src="diagrams/Improper_edge_crossing.png"></center></td><td>   </td><td class="i"><center><img src="diagrams/Proper_edge_crossing.png"></center></td></tr>
+<tr><td class="i"><center>Improper edge crossing</center></td><td width="20px"></td><td class="i"><center>Proper edge crossing</center></td></tr>
+</table>
+<p>
+In general, even this condition is not enough to rule out twists, as a face in the form of a squashed Möbius Disk could still be path-connected.  But it suffices for edge-transitive polyhedra.
+<p>
+<li>in a single circuit at each vertex:  This follows from the polyhedron being a surface.  Every point on the surface must have a neighborhood that is a topological disk.  This means that compounds and kaleidocycles aren't polyhedra.
+</ul>
+
+
+<h3>Summary</h3>
+In general, it is almost sufficient to define a polyhedron as a 2-manifold in which all the curvature is concentrated at a finite number of distinct points.  Those become the vertices.  (Well, most of them.  One can have vertices without curvature such as ones where six equilateral triangles meet.)  All the places where the normal vector changes are along segments between vertices, which become the edges.  But there are other things to take into consideration as well, especially when discussing holes or reciprocals.  For isotoxal polyhedra those issues do not come into play because of the tight constraints imposed by edge transitivity.
+<p>
+Thus a polyhedron is a finite, connected, closed surface, with no coincident elements (vertices, edge, or faces), decomposable into a finite set of faces. A face is a planar immersion of a disk whose interior is path-connected and whose boundary is a polygon having a finite number of sides and any rotation number. Those sides meet in pairs at (linear) edges, where the normal to the surface changes direction. These are incident with exactly two faces and terminate at two vertices, which are shared with other edges. Vertices are distinct with valence at least 3. The faces incident with a vertex form a single circuit.
+
+
+<h3></h3>
+<hr>
+<table class="nav"><tr>
+  <td class="nv3"><a href="Novel_Isotoxals.html">Novel Isotoxals</a></td>
+  <td class="nv3"><a href="Nomenclature.html">Nomenclature</a></td>
+  <td class="nv3"><a href="All_Isotoxals.html">Complete List</a></td>
+  </tr></table>
+<p>
+<h6>@2022  Gordon Collins</h6>
+</body>
+</html>

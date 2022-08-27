@@ -1,0 +1,8 @@
+table { border-collapse: collapse; }
+
+td.c {                text-align: center; }
+td.m { padding:  5px;                     }
+td.n { padding:  5px; text-align: right;  }
+td.v { padding: 15px;                     }
+
+img { width: 300px; }

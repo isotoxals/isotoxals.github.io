@@ -1,0 +1,106 @@
+<!doctype html public "-//IETF//DTD HTML//EN" target="_blank">
+<html>
+<head>
+    <title>Nomenclature</title>
+    <meta charset="utf-8"/>
+    <link rel=stylesheet href="css/swan.css" type="text/css">
+    </head>
+
+<body>
+<h2>Nomenclature of Isotoxal Polyhedra</h2>
+<h3 id="types">Edge Types and Polyhedron Identification</h3>
+For vertex-intransitive isotoxal polyhedra, edges connect a vertex of one equivalence class (A) with a vertex of another equivalence class (B).  The vertices must lie on rotation axes and each vertex is most conveniently thought of as being on one of the two rays of the axis.  Pairs of rays of rotation axes can be distinguished by the angle between them. Distinct angles can be represented by a letter. This produces symbols of the form "Gpqr" where:<br>
+<span style="display:inline-block; margin-left:70px">
+G = letter denoting the rotational symmetry group<br>
+p = order of rotation axis for class A<br>
+q = order of rotation axis for class B<br>
+r = sequential letter for the ray angle.<br>
+</span>
+<p>
+These symbols then represent types of edges of vertex-intransitive isotoxal polyhedra.  Since all edges of a given polyhedron must be of the same type, the types can form the basis of a compact identification tag for each polyhedron, augmented only by a sequential number.  Thus for example, "I53b_1" refers to the first polyhedron with edge type I53b.
+
+
+<h3 id="faces">Isotoxal Faces</h3>
+The symmetry constraints force all faces to have borders that are even-sided isotoxal polygons.  4-gons are rhombi, and m-gons with m &gt; 10 do not appear among isotoxal polyhedra.
+<p>
+I use the notation "[m/d]" (or simply "[m]" when d = 1) to denote a polygon having m edges and rotation number (or density) d.  (The Grünbaum/Shephard notation, oddly, halves the number of vertices.)  This is similar to the "{m/d}" notation commonly used for regular polygons, with the difference that when the greatest common factor (m, d) = h is greater than 1 this refers to an m-gon rather than to a compound of h (m/h)-gons.  A face whose border is such a polygon is a surface that can be understood as made up of triangular patches, each defined by an edge and the center of the face, stitched together along their other sides.  Star-polygon faces have density greater than 1, with a branch point at the center of the face.
+<p>
+When m = 4, one obtains a rhombus or square.  I refer to the latter as a "regular [4]" for consistency.  <a href="Face_Subtypes.html">Here is a table</a> of the types and subtypes for m = 6, 8, 10.  An <i>aligned</i> face has sets of 3 or 4 non-consecutive collinear vertices.  The <i>overlapped</i> [10/3] is a special case in which some edges partially overlap.  To clarify its structure, the table includes a representation of it with its edges shifted slightly.  Each inner vertex is incident with two edges and also lies on two other edges that pass through the same location in space but do not intersect.  In the surface that constitutes a face they are as distant from the vertex as are two layers of a Riemann surface.
+
+
+<h3 id="fuzzy">The Fuzziness of "Polyhedron"</h3>
+<a href="Definition.html">But what are we talking about, anyway?</a>
+
+
+<h3 id="terms">Terminology</h3>
+<table border=0>
+  <tr><td class="t">Equatorial face</td><td class="t">a face that passes through the center of symmetry</td></tr>
+  <tr><td class="t">Covering face  </td><td class="t">a face that contributes to covering the circumsphere, that is, any face that is not equatorial</td></tr>
+
+  <tr><td class="t">
+Hexagrammic</td><td class="t">
+having [6/2]s as faces</td></tr>
+
+  <tr><td class="t">
+Decagrammic</td><td class="t">
+having [10/d]s as faces where d>1</td></tr>
+
+  <tr><td class="t">
+2-Decagrammic</td><td class="t">
+having [10/2]s as faces</td></tr>
+
+  <tr><td class="t">
+4-Decagrammic</td><td class="t">
+having [10/4]s as faces</td></tr>
+
+  <tr><td class="t">
+Cubo-</td><td class="t">
+having 6 square covering faces</td></tr>
+
+  <tr><td class="t">
+Octa-</td><td class="t">
+having 8 triangular covering faces</td></tr>
+
+  <tr><td class="t">
+-hemi-</td><td class="t">
+having equatorial (also known as hemispherical) face planes</td></tr>
+
+  <tr><td class="t">
+-hemiicositetra-</td><td class="t">
+having 12 equatorial face planes that are parallel to those of a 24-hedron</td></tr>
+
+  <tr><td class="t">
+Hemihexaconta-</td><td class="t">
+having 30 equatorial face planes that are parallel to those of a 60-hedron</td></tr>
+
+  <tr><td class="t">
+Dihemidodeca-</td><td class="t">
+having 6 equatorial face planes that are parallel to those of a Dodecahedron, with 2 faces per plane</td></tr>
+
+  <tr><td class="t">
+Dihemiicosa-</td><td class="t">
+having 10 equatorial face planes that are parallel to those of an Icosahedron, with 2 faces per plane</td></tr>
+
+<!--
+Small
+Great
+can refer to polyhedra that differ by radii ratio or degree of stellation
+	larger ratio
+	further stellated
+-->
+
+  </table>
+<p>
+
+
+<h3></h3>
+<hr>
+<table class="nav"><tr>
+  <td class="nv3"><a href="Novel_Isotoxals.html">Novel Isotoxals</a></td>
+  <td class="nv3"><a href="Edge_Transitive_Polyhedra.pdf" download>Enumeration (PDF)</a></td>
+  <td class="nv3"><a href="All_Isotoxals.html">Complete List</a></td>
+  </tr></table>
+<p>
+<h6>@2022  Gordon Collins</h6>
+</body>
+</html>

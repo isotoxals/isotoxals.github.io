@@ -1,0 +1,193 @@
+#VRML V2.0 utf8
+
+NavigationInfo{
+  type  "EXAMINE"
+  }
+
+Viewpoint{ position 4 0 0  orientation  1 1 1 2.0944  fieldOfView 0.6 }
+
+Background{	skyColor .8 .9 1 }
+
+#Inline{ url[ "../Lights.wrl" ]}
+DirectionalLight{	direction -1 -1 -1	}
+DirectionalLight{	direction  1  1  1	}
+
+
+DEF SC Coordinate{ point[
+ 0.85065	 0.52573	 0.00000,
+ 0.85065	-0.52573	 0.00000,
+-0.85065	 0.52573	 0.00000,
+-0.85065	-0.52573	 0.00000,
+ 0.00000	 0.85065	 0.52573,
+ 0.00000	 0.85065	-0.52573,
+ 0.00000	-0.85065	 0.52573,
+ 0.00000	-0.85065	-0.52573,
+ 0.52573	 0.00000	 0.85065,
+-0.52573	 0.00000	 0.85065,
+ 0.52573	 0.00000	-0.85065,
+-0.52573	 0.00000	-0.85065,
+
+ 0.32492	 0.32492	 0.32492,
+ 0.32492	 0.32492	-0.32492,
+ 0.32492	-0.32492	 0.32492,
+ 0.32492	-0.32492	-0.32492,
+-0.32492	 0.32492	 0.32492,
+-0.32492	 0.32492	-0.32492,
+-0.32492	-0.32492	 0.32492,
+-0.32492	-0.32492	-0.32492,
+ 0.52573	 0.00000	 0.20081,
+ 0.52573	 0.00000	-0.20081,
+-0.52573	 0.00000	 0.20081,
+-0.52573	 0.00000	-0.20081,
+ 0.20081	 0.52573	 0.00000,
+-0.20081	 0.52573	 0.00000,
+ 0.20081	-0.52573	 0.00000,
+-0.20081	-0.52573	 0.00000,
+ 0.00000	 0.20081	 0.52573,
+ 0.00000	-0.20081	 0.52573,
+ 0.00000	 0.20081	-0.52573,
+ 0.00000	-0.20081	-0.52573,
+
+ 0.38042	 0.23511	 0.00000,
+ 0.38042	-0.23511	 0.00000,
+-0.38042	 0.23511	 0.00000,
+-0.38042	-0.23511	 0.00000,
+ 0.00000	 0.38042	 0.23511,
+ 0.00000	 0.38042	-0.23511,
+ 0.00000	-0.38042	 0.23511,
+ 0.00000	-0.38042	-0.23511,
+ 0.23511	 0.00000	 0.38042,
+-0.23511	 0.00000	 0.38042,
+ 0.23511	 0.00000	-0.38042,
+-0.23511	 0.00000	-0.38042,
+	]}
+
+# Edges
+Transform{ translation    0.58779   0.10041   0.16246  rotation    0.26287   0.95106  -0.16246  3.14159  children[
+	DEF EDGE  Shape{  appearance Appearance{ material Material{  diffuseColor 1.0  0.7  0  ambientIntensity .7  }}
+			  geometry Cylinder{  radius .005  height    1.05146  }
+			  }
+	] }
+Transform{ translation    0.58779   0.10041  -0.16246  rotation    0.26287   0.95106   0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.32492   0.52573   0.00000  rotation    0.52573   0.52573   0.00000  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.42533   0.36327   0.26287  rotation    0.42533   0.68819  -0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.42533   0.36327  -0.26287  rotation    0.42533   0.68819   0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.58779  -0.10041   0.16246  rotation    0.26287   0.10041  -0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.58779  -0.10041  -0.16246  rotation    0.26287   0.10041   0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.32492  -0.52573   0.00000  rotation    0.52573   0.52573   0.00000  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.42533  -0.36327   0.26287  rotation    0.42533   0.36327  -0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.42533  -0.36327  -0.26287  rotation    0.42533   0.36327   0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.58779   0.10041   0.16246  rotation   -0.26287   0.95106  -0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.58779   0.10041  -0.16246  rotation   -0.26287   0.95106   0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.32492   0.52573   0.00000  rotation   -0.52573   0.52573   0.00000  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.42533   0.36327   0.26287  rotation   -0.42533   0.68819  -0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.42533   0.36327  -0.26287  rotation   -0.42533   0.68819   0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.58779  -0.10041   0.16246  rotation   -0.26287   0.10041  -0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.58779  -0.10041  -0.16246  rotation   -0.26287   0.10041   0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.32492  -0.52573   0.00000  rotation   -0.52573   0.52573   0.00000  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.42533  -0.36327   0.26287  rotation   -0.42533   0.36327  -0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.42533  -0.36327  -0.26287  rotation   -0.42533   0.36327   0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.16246   0.58779   0.10041  rotation   -0.16246   0.78860   0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.16246   0.58779   0.10041  rotation    0.16246   0.78860   0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.26287   0.42533   0.36327  rotation   -0.26287   0.95106   0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.26287   0.42533   0.36327  rotation    0.26287   0.95106   0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.00000   0.32492   0.52573  rotation    0.00000   1.05146   0.00000  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.16246   0.58779  -0.10041  rotation   -0.16246   0.78860  -0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.16246   0.58779  -0.10041  rotation    0.16246   0.78860  -0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.26287   0.42533  -0.36327  rotation   -0.26287   0.95106  -0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.26287   0.42533  -0.36327  rotation    0.26287   0.95106  -0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.00000   0.32492  -0.52573  rotation    0.00000   1.05146   0.00000  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.16246  -0.58779   0.10041  rotation   -0.16246   0.26287   0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.16246  -0.58779   0.10041  rotation    0.16246   0.26287   0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.26287  -0.42533   0.36327  rotation   -0.26287   0.10041   0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.26287  -0.42533   0.36327  rotation    0.26287   0.10041   0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.00000  -0.32492   0.52573  rotation    0.00000   0.00000   0.00000  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.16246  -0.58779  -0.10041  rotation   -0.16246   0.26287  -0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.16246  -0.58779  -0.10041  rotation    0.16246   0.26287  -0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.26287  -0.42533  -0.36327  rotation   -0.26287   0.10041  -0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.26287  -0.42533  -0.36327  rotation    0.26287   0.10041  -0.16246  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.00000  -0.32492  -0.52573  rotation    0.00000   0.00000   0.00000  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.10041   0.16246   0.58779  rotation    0.42533   0.36327   0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.10041  -0.16246   0.58779  rotation    0.42533   0.68819   0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.52573   0.00000   0.32492  rotation    0.00000   0.52573   0.52573  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.36327   0.26286   0.42533  rotation    0.16246   0.26287   0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.36327  -0.26287   0.42533  rotation    0.16246   0.78860   0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.10041   0.16246   0.58779  rotation   -0.42533   0.36327   0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.10041  -0.16246   0.58779  rotation   -0.42533   0.68819   0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.52573   0.00000   0.32492  rotation    0.00000   0.52573   0.52573  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.36327   0.26286   0.42533  rotation   -0.16246   0.26287   0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.36327  -0.26287   0.42533  rotation   -0.16246   0.78860   0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.10041   0.16246  -0.58779  rotation    0.42533   0.36327  -0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.10041  -0.16246  -0.58779  rotation    0.42533   0.68819  -0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.52573   0.00000  -0.32492  rotation    0.00000   0.52573  -0.52573  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.36327   0.26286  -0.42533  rotation    0.16246   0.26287  -0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation    0.36327  -0.26287  -0.42533  rotation    0.16246   0.78860  -0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.10041   0.16246  -0.58779  rotation   -0.42533   0.36327  -0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.10041  -0.16246  -0.58779  rotation   -0.42533   0.68819  -0.26287  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.52573   0.00000  -0.32492  rotation    0.00000   0.52573  -0.52573  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.36327   0.26286  -0.42533  rotation   -0.16246   0.26287  -0.42533  3.14159  children[ USE EDGE ] }
+Transform{ translation   -0.36327  -0.26287  -0.42533  rotation   -0.16246   0.78860  -0.42533  3.14159  children[ USE EDGE ] }
+
+# Faces
+Transform{ children[
+
+	# Outer faces
+	Shape{
+		appearance Appearance{ material Material{
+			diffuseColor 0 1 0
+			ambientIntensity 1
+			transparency .2
+			}}
+		geometry IndexedFaceSet{
+			coord USE SC
+			coordIndex[
+12	1	13	32	-1	13	4	20	32	-1	20	10	24	32	-1	24	8	21	32	-1	21	5	12	32	-1
+				]
+			convex FALSE
+			solid FALSE
+			}
+		}
+
+	Shape{
+		appearance Appearance{ material Material{
+			diffuseColor 1 0 0
+			ambientIntensity 1
+			transparency .3
+			}}
+		geometry IndexedFaceSet{
+			coord USE SC
+			coordIndex[
+15	0	14	33	-1	14	7	21	33	-1	21	8	26	33	-1	26	10	20	33	-1	20	6	15	33	-1
+17	3	16	34	-1	16	5	23	34	-1	23	9	25	34	-1	25	11	22	34	-1	22	4	17	34	-1
+18	2	19	35	-1	19	6	22	35	-1	22	11	27	35	-1	27	9	23	35	-1	23	7	18	35	-1
+28	0	25	36	-1	25	9	12	36	-1	12	5	16	36	-1	16	8	24	36	-1	24	2	28	36	-1
+25	0	30	37	-1	30	2	24	37	-1	24	10	17	37	-1	17	4	13	37	-1	13	11	25	37	-1
+27	1	29	38	-1	29	3	26	38	-1	26	8	18	38	-1	18	7	14	38	-1	14	9	27	38	-1
+31	1	27	39	-1	27	11	15	39	-1	15	6	19	39	-1	19	10	26	39	-1	26	3	31	39	-1
+14	0	28	40	-1	28	6	20	40	-1	20	4	29	40	-1	29	1	12	40	-1	12	9	14	40	-1
+28	2	18	41	-1	18	8	16	41	-1	16	3	29	41	-1	29	4	22	41	-1	22	6	28	41	-1
+30	0	15	42	-1	15	11	13	42	-1	13	1	31	42	-1	31	5	21	42	-1	21	7	30	42	-1
+19	2	30	43	-1	30	7	23	43	-1	23	5	31	43	-1	31	3	17	43	-1	17	10	19	43	-1
+				]
+			convex FALSE
+			solid FALSE
+			}
+		}
+
+	# Equatorial faces
+	Shape{
+		appearance Appearance{ material Material{
+			diffuseColor 0 0 1
+			ambientIntensity 1
+			transparency .0
+			}}
+		geometry IndexedFaceSet{
+			coord USE SC
+			coordIndex[
+				]
+			solid FALSE
+			}
+		}
+
+	]}
+
