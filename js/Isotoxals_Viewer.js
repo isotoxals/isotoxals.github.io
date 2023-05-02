@@ -2,18 +2,17 @@
 
 // get arg from url, e.g.: '...html?phn=I32b_1'
 const Query = window.location.search;
-var Item = Query.substring( 5, 50 );   // .replace(/%22/g,'');
-Item = Item.replace(/%C2%B1/g,'±');
+var Item_ID = Query.substring( 5, 50 );   // .replace(/%22/g,'');
 
 // standard global variables
 var  Container, Renderer, Scene, Camera, Controls;
 
 // custom global variables (accessible to GUI callbacks)
-var  Settings, Settings2;
+var  Settings;
 
 init();
-var  This_item = OBJECTS[Item];  // object to display - changed by selection in GUI
-if(  This_item == undefined  ){   This_item = OBJECTS.I52c_1;   }
+var  This_item = OBJECTS[Item_ID];  // object to display - changed by selection in GUI
+if(  This_item == undefined  ){   This_item = OBJECTS.O32b_1;   }
 
 Make_Menus();
 Display( This_item ); 
@@ -160,15 +159,15 @@ function  Make_Menus(){
 
 	//  Visibility of menus
 	function  Vis( Item ){
-		var  PO = OPTIONS[Item.Tag];
+		var  PO = Item.Options;
 		if(  PO.Type1  == "Y"  ){   Type1_opts.show();   }    else{   Type1_opts.hide();   }
 		if(  PO.Type2  == "Y"  ){   Type2_opts.show();   }    else{   Type2_opts.hide();   }
 		if(  PO.Comp   == "Y"  ){   Comp_opts.show();    }    else{   Comp_opts.hide();    }
 		if(  PO.Models == "Y"  ){   Model_opts.show();   }    else{   Model_opts.hide();   }
 		}
 
-	function  Switch_to( Item ){
-		This_item = OBJECTS[Item];
+	function  Switch_to( Item_ID ){
+		This_item = OBJECTS[Item_ID];
 		Vis( This_item );
 		Display( This_item );			
 		}		
@@ -215,7 +214,7 @@ function  Structure_from_Definition( Defn ){
 		}
 	var  Model_option = Settings.Model;
 	   // Force full model for Compounds and the exploded-Vertex model
-	if(  OPTIONS[Defn.Tag].Models != "Y"  ){   Model_option = "Full";   }
+	if(  Defn.Options.Models != "Y"  ){   Model_option = "Full";   }
 	   // Ignore Face hightlighting/hiding in single-element models
 	Opts1.Faces_single = Opts1.Show_as.replace("One Complete","All Strips").replace("Hidden","All Strips");
 	Opts2.Faces_single = Opts2.Show_as.replace("One Complete","All Strips").replace("Hidden","All Strips");
